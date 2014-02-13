@@ -1,6 +1,6 @@
 ## A scaffold tool for web applications
 
-<img src="img/logo.jpg" />
+<img src="img/cover.png" />
 
 Igor Ribeiro Lima @ [Avenue Code](http://www.avenuecode.com)
 
