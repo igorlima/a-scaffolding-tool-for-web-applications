@@ -12,13 +12,13 @@
 
 ## Agenda
 
- - about scaffolding
- - scaffolding on some languages
+ - About scaffolding
+ - Scaffolding on some languages
  - Yeoman
- - tools that work together with Yeoman
- - finding a generator for an web applications
- - an example
- - challenge
+ - Tools that work together with Yeoman
+ - Finding a generator for a web application
+ - An example
+ - Challenge
 
 ---
 
@@ -31,14 +31,14 @@
 ## About scaffolding
 
 - promoting a better learning
-- aiding the student in hi/sher construction of new knowledge
+- aiding the student in his/her construction of new knowledge
 - it may help the leaner immediately
 - it makes learning more tangible
 - also, it can help developers quickly build application
 
 ---
 
-## If you come from Rails, these commands bellow may be familiar:
+## If you come from Rails, these commands below may be familiar:
 
 ```
 rails generate controller Greetings hello
@@ -96,7 +96,7 @@ The web's scaffolding tool for modern webapps
 
 ----
 
-## How to find the better generator
+## How to find the best generator
 
 - [Official generators](http://yeoman.io/official-generators.html)
 - [Community generators](http://yeoman.io/community-generators.html)
@@ -148,7 +148,7 @@ add the script in **./app/index.html**
 
 ----
 
-## Binding contexts with Knockout
+## Binding contexts
 
 ``./app/scripts/main.js``
 <br>
@@ -178,20 +178,20 @@ add the script in **./app/index.html**
 
 ----
 
-## Adding a view for knockout
+## Adding a view
 
 ``./app/index.html``
 <br>
 
 <pre class="prettyprint">
-<code class="lanh-html">
-<p>
+<code class="lang-html"><p>
   <a class="btn btn-lg btn-success" href="#" data-bind="click: add">
     Splendid!
   </a>
 </p>
 
-<input type="text" data-bind="value: text" size="30" placeholder="add a new todo here">
+<input type="text" data-bind="value: text" size="30"
+  placeholder="add a new todo here">
 
 <ul data-bind="foreach: list">
   <li><span data-bind="text: text"></span></li>
