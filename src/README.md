@@ -1,18 +1,10 @@
-<!--
-
-WARNING!! DON'T EDIT THE FILE README.md on the root of the project, that one is a GENERATED FILE!
-
-You should just edit the source file at src/README.md - the one which stars with ## @@title
-
--->
-
 ## @@title
 
-<img src="img/cover.jpg" class="logo" />
+<img src="img/logo.jpg" />
 
 @@author @ [Avenue Code](http://www.avenuecode.com)
 
-*@@email*
+*@@email* <!-- .element: class="feature" -->
 
 @@date
 
@@ -20,192 +12,220 @@ You should just edit the source file at src/README.md - the one which stars with
 
 ## Agenda
 
- - The template
-  - Installing
-  - Working
-  - Deploying
- - Your talk
-  - Organization
-  - The DO's
-  - The DONT's
-  - Tips
-
-----
-
-## Agenda
-
- - Contributing
- - Learn more
- - Conclusion
- - Assignment
+ - about scaffolding
+ - scaffolding on some languages
+ - Yeoman
+ - tools that work together with Yeoman
+ - finding a generator for an web applications
+ - an example
+ - challenge
 
 ---
 
 ## Prerequisites
 
-- Markdown
-- Reveal.js
-- Grunt
+- JavaScript beginner
 
 ---
 
-## The template
+## About scaffolding
 
-1. The Avenue Code talk template is a responsive, web-based talk template.
-1. This template is based on [Reveal.JS](http://lab.hakim.se/reveal-js).
-1. All you need to do is to write your content in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-1. There are some [Grunt](http://gruntjs.com) jobs to automatize the build process.
-1. It has *automatic code highlighting*, guessing the programming language you used.
-1. Once it is described in *README.md*, the talk contents will also be available as the repository description which is a common format for tutorials.
-
-----
-
-## Setting up your repo
-
-1. Sign in on GitHub
-1. Fork the repository <https://github.com/acbr/talk-template>
-1. Rename it to match your talk name (ex: *talk-design-patterns*)
-1. Clone this repository
-1. Navigate to its folder on the terminal
-
-----
-
-## Building and running
-
-1. Install [Node.js](http://nodejs.org/)
-1. Install [Grunt](http://gruntjs.com/getting-started#installing-the-cli)
-1. On the repo folder, install the npm dependencies
-```sh
-$ npm install
-```
-1. Build it, serve it and monitor source files for changes
-```sh
-$ grunt
-```
-1. Open <http://localhost:8000> to view your talk
-
-----
-
-## Working
-
-1. Open up *config.json* and fill your talk data such as title, author, email, date and description.
-  - That is the *ONLY FILE* you should edit on the project root!
-1. Any further change you will do is inside the *src* folder, such as:
-  - *src/README.md* to write your talk content in *Markdown*
-  - *src/index.html* to modify the HTML
-1. Grunt will generate files on the project root as you change *src*.
-1. In order to separate slides horizontally, use 3 dashes (---).
-1. In order to separate slides vertically, use 4 dashes (----).
-1. In order to *call out attention*, put an asterisk around your text:
-```
-In order to *call out attention*, ...
-```
-
-----
-
-## Deploying
-
-1. Make sure your build is not breaking.
-  - You should see *Done, without errors.* in the terminal.
-1. *git add*, *git commit* and *git push* to *gh-pages* branch.
-1. You should see your talk in an address like:
-  - http://*your-github-username*.github.io/*your-repo-name*
-  - Ex: <http://acbr.github.io/talk-template>
+- promoting a better learning
+- aiding the student in hi/sher construction of new knowledge
+- it may help the leaner immediately
+- it makes learning more tangible
+- also, it can help developers quickly build application
 
 ---
 
-## Your talk
+## If you come from Rails, these commands bellow may be familiar:
 
- - Should last no more than 50 minutes, leave up to 10 minutes for questions.
- - Should not be too deep neither too superficial.
- - Give at least 3 reference links to be followed for further studies.
- - Give a challenge that would be solved using ideas that were covered on the talk.
- - It is ok to go a little bit far (forcing the attendee to do some research), but that should be optional.
+```
+rails generate controller Greetings hello
+```
 
-----
-
-## Organization
-
- - 1st slide: the cover, featuring your talk name, your name, the lecture date and AC logo.
- - 2nd slide: the agenda, in topics.
- - 3nd slide: the prerequisites of your talk.
- - From 4th slide on: your content
-  - When content from the same topic doesn't fit on a slide -> grow it *VERTICALLY* by adding a slide below (----).
-  - When you finish a topic and will start a different one -> grow it *HORIZONTALLY* by adding a slide to the right (---).
- - The 3 last slides: Conclusion, Learn more (with the reference links) and Challenge.
+```
+rails generate scaffold HighScore game:String score:integer
+```
 
 ----
 
-## The DO's
+## on Django
 
-1. *BE BALANCED BETWEEN THEORY AND PRACTICE*. Your target is keeping the subject interesting for everybody.
-1. *BE CONSISTENT*. Please watch some good screencasts in order to learn how to use your voice and conduct the talk.
-1. *BE POLITE*. Don't use slangs neither bad words.
-1. *BE OBJECTIVE*. Don't overexplain in such way you could cause confusion to your attendees.
-1. *KEEP THE FOCUS*. Off-topic discussions are ok, but only if it doesn't disturb the natural flow of your content.
-1. *BE PREPARED*. If you are going to use examples or live coding, make sure you have them all prepared beforehand.
-1. *TRAIN* your full talk at least once before your talk.
+```
+django-admin.py startproject mysite
+```
 
 ----
 
-## The DONT's
+## on Java Play Framework
 
-1. *DO NEVER SHOW PRIVATE CODE FROM THE CLIENT*. This is CRITICAL and can cause serious problems.
-1. *DON'T BE ARROGANT*. Be humble and don't focus the talk on yourself.
-1. *DON'T GENERALIZE*, specially stuff that you are not sure about.
-1. *DON'T MAKE UP DATA*. Base yourself on trustable references.
-1. *DON'T BE BORING*. Just be yourself. It is ok to joke around, but don't exaggerate.
+```
+play new myFirstApp
+```
 
 ----
 
-## Tips
+## on Maven
 
- - *ENJOY* your experience by creating the talk, because you will surely learn MUCH MORE than your attendees.
- - *BRING WATER* to drink while you present. You will certainly need it!
- - *BE OPEN* to receive questions and even criticism. You will learn a lot from them.
- - *ALWAYS* be polite when talking to your audience. This will always open doors for you.
- - People might come to you with questions and more complex cases after your talk. Consider it as a gift, it means you represent something good for them!
+```
+  mvn archetype:generate \
+    -DarchetypeGroupId=org.apache.maven.archetypes \
+    -DgroupId=com.mycompany.app \
+    -DartifactId=my_app
+```
+
+----
+
+## Why not do scaffolding using NodeJS?
+
+That's why Yeoman comes up
 
 ---
 
-## Contributing
+## Yeoman
 
-Should you wish to contribute, please be welcome to!
+The web's scaffolding tool for modern webapps
 
-1. Fork the repository <https://github.com/acbr/talk-template>
-1. Create a feature branch for your contribution
-```sh
-git checkout -b my-new-feature
+----
+
+## Yeoman works well with two great friends
+
+- [Grunt](http://gruntjs.com/): used for automating tasks such as: minification, compilation, unit testing, linting, etc.
+- [Bower](http://bower.io/): used for dependency management
+
+----
+
+## How to find the better generator
+
+- [Official generators](http://yeoman.io/official-generators.html)
+- [Community generators](http://yeoman.io/community-generators.html)
+
+<br>
+For our example we'll use the official generator named [webapp](https://github.com/yeoman/generator-webapp). Let's move on and do an example. Let's go?
+
+---
+
+## An example
+
+This example was based from the [AngularJS tutorial](http://angularjs.org/)
+
+----
+
+## Installing the required tools
+
 ```
-1. Commit your changes
-```sh
-git commit -am 'Add some feature'
+npm install -g yo                # install Yeoman
+npm install -g grunt-cli         # install Grunt
+npm install -g bower             # install Bower
+npm install -g generator-webapp  # install a generator
 ```
-1. Push to the branch
-```sh
-git push origin my-new-feature
+
+----
+
+## Scaffolding our example
+
 ```
-1. Create a Pull Request
+yo webapp                    # scaffold out a skeleton webap project
+grunt serve                  # preview the app example
+```
+
+----
+
+## Adding a js dependency
+
+```
+bower install knockout-dist  # install KnockoutJs as a dependency
+```
+<br>
+add the script in **./app/index.html**
+
+<pre class="prettyprint">
+<code class="lang-html">
+<script src="bower_components/knockout-dist/knockout.js"></script>
+</code>
+</pre>
+
+----
+
+## Binding contexts with Knockout
+
+``./app/scripts/main.js``
+<br>
+
+```
+(function(global, ko){
+  global.generate_a_new_todo = function() {
+    return {
+      total: ko.observable(0),
+      list:  ko.observableArray(),
+      text:  ko.observable(''),
+      add:   function() {
+        var todo = this;
+        todo.list.push({
+          text: todo.text()
+        });
+        todo.text('');
+        todo.total(todo.list().length);
+      }
+    };
+  };
+
+  ko.applyBindings(generate_a_new_todo());
+}(window, ko));
+
+```
+
+----
+
+## Adding a view for knockout
+
+``./app/index.html``
+<br>
+
+<pre class="prettyprint">
+<code class="lanh-html">
+<p>
+  <a class="btn btn-lg btn-success" href="#" data-bind="click: add">
+    Splendid!
+  </a>
+</p>
+
+<input type="text" data-bind="value: text" size="30" placeholder="add a new todo here">
+
+<ul data-bind="foreach: list">
+  <li><span data-bind="text: text"></span></li>
+</ul>
+
+<p class="lead">Total: <span data-bind="text: total"></span></p>
+</code>
+</pre>
 
 ---
 
 ## Conclusion
 
-- This talk template rocks!
-- Your life should be easier now.
+- Your life should be easier from now
+- Scaffold any webapp you have in mind
 
 ---
 
 ## Learn more
 
-1. [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-1. [Reveal.JS](https://github.com/hakimel/reveal.js)
+1. [Yeoman](http://yeoman.io/)
 1. [Grunt](http://gruntjs.com)
+1. [Bower](http://bower.io/)
 
 ---
 
 ## Challenge
 
-1. Make your awesome talk based on this template.
-1. Push it to a gh-pages branch on your GitHub account.
-1. Share the URL with the world!
+1. Scaffold an web application
+1. Use a JS framework of your preference
+  - AngularJS
+  - Ember
+  - Backbone
+  - Mustache
+  - Handlebars
+  - So forth
+1. Do the simpliest TO DO list application
